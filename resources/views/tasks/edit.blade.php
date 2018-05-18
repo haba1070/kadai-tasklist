@@ -8,6 +8,9 @@
 
         {!! Form::label('content', 'Task:') !!}
         {!! Form::text('content') !!}
+        
+        {!! Form::label('status', 'Status:') !!}
+        {!! Form::select('status', ['' => '', 'Complete' => 'Complete', 'Progress' => 'Progress', 'Not' => 'Not']) !!}
 
         {!! Form::submit('Update') !!}
 
